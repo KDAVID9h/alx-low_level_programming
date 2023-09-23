@@ -6,16 +6,16 @@
  *
  * Return: A pointer to the resulting string `str`
  */
-char *string_toupper(char *str)
+char *string_toupper(char *n)
 {
-    char *ptr = str;
+	int i;
 
-    while (*str != '\0')
-    {
-        if (*str >= 'a' && *str <= 'z')
-            *str -= 32;
-        str++;
-    }
-
-    return ptr;
+	i = 0;
+	while (n[i] != '\0')
+	{
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
+		i++;
+	}
+	return (n);
 }
