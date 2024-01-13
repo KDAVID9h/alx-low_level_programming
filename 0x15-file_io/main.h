@@ -5,7 +5,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdlib.h>
-#include <elf.h>
+//#include <elf.h>
 
 /* Une fonction qui lit un fichier texte et l'imprime sur la sortie standard POSIX */
 ssize_t read_textfile(const char *filename, size_t letters);
@@ -23,9 +23,11 @@ void print_class(unsigned char e_class);
 void print_data(unsigned char e_data);
 
 /* Une fonction qui affiche les informations sur le type de fichier ELF */
-void print_type(uint16_t e_type);
+//void print_type(uint16_t e_type);
 
 /* Une fonction qui affiche les informations sur le système d'exploitation et l'interface ABI */
 void print_osabi(unsigned char e_osabi);
+
+int _putchar(char c);
 
 #endif /* MAIN_H */
